@@ -7,6 +7,6 @@
 sync { 
   default.rsync, 
   source="root/www/gifs", 
-  target="backupServer:/raid",   
+  target="backupServer:/www/gifs",   
   delay=10 
 } 
