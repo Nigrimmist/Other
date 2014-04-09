@@ -1,7 +1,7 @@
 ﻿settings = {
-  logfile    = "root/www/logs/lsyncd.log", 
-  statusFile = "root/www/logs/lsyncd.status", 
-  nodaemon   = false 
+  logfile    = "/root/www/logs/lsyncd.log", 
+  statusFile = "/root/www/logs/lsyncd.status", 
+  nodaemon   = true 
 } 
 
 sync { 

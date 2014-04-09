@@ -7,7 +7,7 @@ sudo apt-get install lsyncd
 echo "$backup_server_ip backupServer" >> /etc/hosts
 
 cp -i /root/www/configs/lsyncd.conf.lua /etc/lsyncd/
-cp -i /root/www/configs/lsyncd.conf /etc/init/
+#cp -i /root/www/configs/lsyncd.conf /etc/init/
 echo "!!!press enter here"
 ssh-keygen -t rsa
 ssh-copy-id "root@$backup_server_ip"
@@ -18,4 +18,4 @@ echo "!!!PLEASE check ssh connect ssh 'root@$backup_server_ip'"
 chmod 775 /etc/init.d/lsyncd
 chown root:root /etc/init.d/lsyncd
 #service lsyncd start
-sudo /etc/init.d/lsyncd
+sudo /etc/init.d/lsyncd start
