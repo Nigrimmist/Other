@@ -25,5 +25,5 @@ chmod +x /root/www/scripts/lsyncd.sh
 
 
 
-sudo /root/www/scripts/lsyncd.sh backup_server_ip=$backup_server_ip
+sudo /root/www/scripts/lsyncd.sh 
 
