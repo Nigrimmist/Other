@@ -15,4 +15,5 @@ echo "!!!PLEASE check ssh connect ssh 'root@$backup_server_ip'"
 
 chmod 775 /etc/init.d/lsyncd
 chown root:root /etc/init.d/lsyncd
-service lsyncd start
+#service lsyncd start
+sudo /etc/init.d/lsyncd
