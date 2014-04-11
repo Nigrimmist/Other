@@ -18,3 +18,4 @@ chmod 775 /etc/init.d/lsyncd
 chown root:root /etc/init.d/lsyncd
 #service lsyncd start
 sudo /etc/init.d/lsyncd start
+sudo sed -i 's/nodaemon   = true/nodaemon   = false/' /etc/lsyncd/lsyncd.conf.lua
