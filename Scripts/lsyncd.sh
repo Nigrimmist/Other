@@ -18,4 +18,7 @@ chmod 775 /etc/init.d/lsyncd
 chown root:root /etc/init.d/lsyncd
 #service lsyncd start
 sudo /etc/init.d/lsyncd start
+trap ctrl_c INT
+echo "config clearing..."
 sudo sed -i 's/nodaemon   = true/nodaemon   = false/' /etc/lsyncd/lsyncd.conf.lua
+echo "config clearing done"
