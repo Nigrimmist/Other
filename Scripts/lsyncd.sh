@@ -9,10 +9,8 @@ echo "$backup_server_ip backupServer" >> /etc/hosts
 cp -f /root/www/configs/lsyncd.conf.lua /etc/lsyncd/
 echo "!!!press enter here"
 ssh-keygen -t rsa
-ssh-copy-id "$backup_server_ip"
+ssh-copy-id "backupServer"
 echo "!!!PLEASE check ssh connect ssh 'root@$backup_server_ip'"
-
-
 
 chmod 775 /etc/init.d/lsyncd
 chown root:root /etc/init.d/lsyncd
