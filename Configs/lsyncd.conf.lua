@@ -7,8 +7,7 @@ settings = {
 sync { 
   default.rsyncssh, 
   source="/root/www/gifs", 
-  targetdir="/root/www/gifs/all",  
+  targetdir="/root/www/gifs/synced",  
   host = "backupServer",  
-  delay=10,
-  delete=false  
+  delay=10  
 } 

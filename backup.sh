@@ -5,7 +5,7 @@ mkdir /root/www/scripts
 mkdir /root/www/gifs
 mkdir /root/www/gifs/all
 mkdir /root/www/gifs/synced
-mkdir /root/www/ssh
+mkdir /root/www/temp
 mkdir /etc/lsyncd
 
 sudo apt-get update

@@ -6,7 +6,7 @@ mkdir /root/www/configs
 mkdir /root/www/logs
 mkdir /root/www/scripts
 mkdir /root/www/gifs
-mkdir /root/www/ssh
+mkdir /root/www/temp
 mkdir /etc/lsyncd
 
 
