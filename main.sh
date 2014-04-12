@@ -18,10 +18,21 @@ sudo apt-get install htop
 #download configs
 wget -O /root/www/configs/lsyncd.conf.lua "https://raw.githubusercontent.com/Nigrimmist/Other/master/Configs/lsyncd.conf.lua"
 
+wget -O /root/www/configs/vsftpd.conf "https://raw.githubusercontent.com/Nigrimmist/Other/master/Configs/vsftpd.conf"
 
 #download scripts
 wget -O /root/www/scripts/lsyncd.sh "https://raw.githubusercontent.com/Nigrimmist/Other/master/Scripts/lsyncd.sh"
 chmod +x /root/www/scripts/lsyncd.sh
 
-sudo /root/www/scripts/lsyncd.sh 
+sudo /root/www/scripts/lsyncd.sh #sync
 
+#ftp
+sudo apt-get install vsftpd 
+sudo useradd -d /root/www/gifs -m ftpuser
+echo "FTP PASSWORD : "
+sudo passwd ftpuser
+chown ftpuser:ftpuser /root/www/gifs
+cp -f /root/www/configs/vsftpd.conf /etc/
+
+
+echo "Reboot required"

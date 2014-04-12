@@ -23,4 +23,3 @@ sudo apt-get install lua5.1 liblua5.1-0-dev pkg-config
 cd /root/www/temp/lsyncd-2.1.5 && ./configure
 cd /root/www/temp/lsyncd-2.1.5 && sudo make install
 cp -f /root/www/temp/lsyncd-2.1.5/lsyncd /usr/bin/
-echo "REBOOT REQUIRED"
