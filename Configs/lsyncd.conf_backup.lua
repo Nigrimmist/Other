@@ -1,12 +1,12 @@
 settings = {
-  logfile    = "/root/www/logs/lsyncd.log", 
-  statusFile = "/root/www/logs/lsyncd.status", 
+  logfile    = "/www/logs/lsyncd.log", 
+  statusFile = "/www/logs/lsyncd.status", 
   nodaemon   = false 
 } 
 
 sync {
     default.direct,
-    source="/root/www/gifs/synced", 
-    target="/root/www/gifs/all", 
+    source="/www/gifs/synced", 
+    target="/www/gifs/all", 
     delete=false 	
 }
