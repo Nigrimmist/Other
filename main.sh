@@ -1,4 +1,4 @@
-export backup_server_ip="188.226.167.248"
+export backup_server_ip="188.226.202.141"
 
 
 mkdir /root/www
@@ -22,8 +22,6 @@ wget -O /root/www/configs/lsyncd.conf.lua "https://raw.githubusercontent.com/Nig
 #download scripts
 wget -O /root/www/scripts/lsyncd.sh "https://raw.githubusercontent.com/Nigrimmist/Other/master/Scripts/lsyncd.sh"
 chmod +x /root/www/scripts/lsyncd.sh
-
-
 
 sudo /root/www/scripts/lsyncd.sh 
 

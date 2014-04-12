@@ -1,4 +1,4 @@
-export backup_server_ip="188.226.167.248"
+export backup_server_ip="188.226.202.141"
 
 sudo touch /root/www/logs/lsyncd.log /root/www/logs/lsyncd.status
 sudo chmod 774 /root/www/logs/lsyncd.log /root/www/logs/lsyncd.status
