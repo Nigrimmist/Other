@@ -15,13 +15,13 @@ echo "!!!PLEASE check ssh connect ssh 'root@$backup_server_ip'"
 chmod 775 /etc/init.d/lsyncd
 chown root:root /etc/init.d/lsyncd
 
-wget -O /root/www/temp/lsyncd-2-1.5.tar.gz "http://lsyncd.googlecode.com/files/lsyncd-2.1.5.tar.gz"
-tar -xzvf /root/www/temp/lsyncd-2-1.5.tar.gz
+wget -O /root/www/temp/lsyncd-2.1.5.tar.gz "http://lsyncd.googlecode.com/files/lsyncd-2.1.5.tar.gz"
+tar -xzvf /root/www/temp/lsyncd-2.1.5.tar.gz
 
 sudo apt-get install lua5.1 liblua5.1-0-dev pkg-config
 
-sudo /root/www/temp/lsyncd-2.1.5/configure
-cd /root/www/temp/lsyncd-2.1.5/ && sudo make install
+cd /root/www/temp/lsyncd-2.1.5 && ./configure
+cd /root/www/temp/lsyncd-2.1.5 && sudo make install
 cp -f /root/www/temp/lsyncd-2.1.5/lsyncd /usr/bin/
 echo "REBOOT REQUIRED"
 
