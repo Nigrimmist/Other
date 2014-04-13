@@ -27,12 +27,11 @@ chmod +x /www/scripts/lsyncd.sh
 sudo /www/scripts/lsyncd.sh #sync
 
 #ftp
-sudo apt-get install vsftpd 
-sudo useradd -d /www/gifs -m ftpuser
-echo "FTP PASSWORD : "
-sudo passwd ftpuser
-chown ftpuser:ftpuser /www/gifs
-cp -f /www/configs/vsftpd.conf /etc/
-sudo chmod a-w /www/gifs
+#sudo apt-get install vsftpd 
+#sudo useradd -d /www/gifs -m ftpuser
+#echo "FTP PASSWORD : "
+#sudo passwd ftpuser
+#chown ftpuser:ftpuser /www/gifs
+#cp -f /www/configs/vsftpd.conf /etc/
 
 echo "Reboot required"
