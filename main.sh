@@ -33,6 +33,6 @@ echo "FTP PASSWORD : "
 sudo passwd ftpuser
 chown ftpuser:ftpuser /www/gifs
 cp -f /www/configs/vsftpd.conf /etc/
-
+sudo chmod a-w /www/gifs
 
 echo "Reboot required"

@@ -1,4 +1,4 @@
-settings = {
+settings {
   logfile    = "/www/logs/lsyncd.log", 
   statusFile = "/www/logs/lsyncd.status", 
   nodaemon   = false 
