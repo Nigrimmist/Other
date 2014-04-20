@@ -1,5 +1,7 @@
 export backup_server_ip="188.226.202.141"
 
+wget -O /www/configs/lsyncd.conf.lua "https://raw.githubusercontent.com/Nigrimmist/Other/master/Configs/lsyncd.conf.lua"
+
 sudo touch /www/logs/lsyncd.log /www/logs/lsyncd.status
 sudo chmod 774 /www/logs/lsyncd.log /www/logs/lsyncd.status
 
