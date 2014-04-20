@@ -111,9 +111,7 @@ function ssga.new(ua, domain, options)
 			end
 		end
 
-		ngx.say("user_agent: ", options.user_agent)
-		ngx.say("prefix: ", options.prefix)
-		ngx.say("language: ", options.language)
+		
 
 	end
 

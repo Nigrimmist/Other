@@ -1,4 +1,5 @@
 wget -O /www/configs/nginx.conf "https://raw.githubusercontent.com/Nigrimmist/Other/master/Configs/nginx.conf"
+wget -O /www/scripts/ssga.lua "https://raw.githubusercontent.com/Nigrimmist/Other/master/Scripts/ssga.lua"
 
 sudo apt-get install nginx
 
@@ -41,6 +42,9 @@ cd /www/temp/nginx-1.4.6 && ./configure --prefix=/etc/nginx --add-module=/www/te
 cd /www/temp/nginx-1.4.6 && sudo make
 cd /www/temp/nginx-1.4.6 && sudo make install
 
+cp -f /www/configs/nginx.conf /etc/nginx/conf/
+cp -f /www/scripts/ssga.lua /etc/nginx/
+
 cp /www/temp/nginx-1.4.6/objs/nginx /usr/sbin/
-sudo service nginx start
+sudo nginx
 
