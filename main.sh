@@ -24,7 +24,7 @@ chmod +x /www/scripts/lsyncd.sh
 chmod +x /www/scripts/nginx.sh
 
 sudo /www/scripts/lsyncd.sh #sync
-sudo /www/scripts/nginx.sh #sync
+sudo /www/scripts/nginx.sh #nginx
 
 #ftp
 #wget -O /www/configs/vsftpd.conf "https://raw.githubusercontent.com/Nigrimmist/Other/master/Configs/vsftpd.conf"
