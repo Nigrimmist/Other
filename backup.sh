@@ -9,8 +9,8 @@ mkdir /www/temp
 mkdir /etc/lsyncd
 
 sudo apt-get update
-sudo apt-get install xrdp #rdp
-sudo apt-get install htop
+sudo apt-get -y install xrdp #rdp
+sudo apt-get -y install htop
 
 #download configs
 wget -O /www/configs/lsyncd.conf.lua "https://raw.githubusercontent.com/Nigrimmist/Other/master/Configs/lsyncd.conf_backup.lua"

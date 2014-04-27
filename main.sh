@@ -1,5 +1,5 @@
 export backup_server_ip="188.226.202.141"
-export uploadFileUser="fileUploadUser"
+export uploadFileUser="fileuploaduser"
 
 mkdir /www
 mkdir /www/configs
@@ -12,8 +12,8 @@ mkdir /etc/lsyncd
 
 
 sudo apt-get update
-sudo apt-get install xrdp #rdp
-sudo apt-get install htop
+sudo apt-get -y install xrdp #rdp
+sudo apt-get -y install htop
 
 
 

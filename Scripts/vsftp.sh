@@ -1,1 +1,1 @@
-sudo apt-get install vsftpd
+sudo apt-get -y install vsftpd

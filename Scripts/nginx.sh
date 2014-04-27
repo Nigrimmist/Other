@@ -1,13 +1,13 @@
 wget -O /www/configs/nginx.conf "https://raw.githubusercontent.com/Nigrimmist/Other/master/Configs/nginx.conf"
 wget -O /www/scripts/ssga.lua "https://raw.githubusercontent.com/Nigrimmist/Other/master/Scripts/ssga.lua"
 
-sudo apt-get install nginx
+sudo apt-get -y install nginx
 
 wget -O /www/temp/LuaJIT-2.0.1.tar.gz "http://luajit.org/download/LuaJIT-2.0.1.tar.gz"
 cd /www/temp && tar -xzvf /www/temp/LuaJIT-2.0.1.tar.gz
 
 
-sudo apt-get install gcc
+sudo apt-get -y install gcc
 cd /www/temp/LuaJIT-2.0.1 && sudo make
 cd /www/temp/LuaJIT-2.0.1 && sudo make install
 
@@ -25,16 +25,16 @@ cd /www/temp && tar -xzvf nginx-1.4.6.tar.gz
 
 
 
-sudo apt-get download libc-bin
+sudo apt-get -y download libc-bin
 dpkg -x libc-bin*.deb /www/temp/unpackdir/
 sudo cp /www/temp/unpackdir/sbin/ldconfig /sbin/
-sudo apt-get install --reinstall libc-bin
+sudo apt-get -y install --reinstall libc-bin
 sudo apt-get install -f
 sudo cp /www/temp/unpackdir/sbin/ldconfig /root/
 
 #копируем ldconfig (и .real) в root. если ошибка в  след строке, То и в /www/temp
-sudo apt-get install libpcre3 libpcre3-dev
-sudo apt-get install libssl-dev
+sudo apt-get -y install libpcre3 libpcre3-dev
+sudo apt-get -y install libssl-dev
 export LUAJIT_LIB=/usr/local/lib
 export LUAJIT_INC=/usr/local/include/luajit-2.0
 
