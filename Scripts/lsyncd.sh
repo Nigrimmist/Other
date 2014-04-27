@@ -11,6 +11,11 @@ echo "$backup_server_ip backupServer" >> /etc/hosts
 cp -f /www/configs/lsyncd.conf.lua /etc/lsyncd/
 echo "!!!press enter here"
 ssh-keygen -t rsa
+echo "----------ENTER 'YES'------------"
+echo "----------ENTER 'YES'------------"
+echo "----------ENTER 'YES'------------"
+echo "----------ENTER 'YES'------------"
+
 ssh-copy-id "backupServer"
 echo "!!!PLEASE check ssh connect ssh 'root@$backup_server_ip'"
 

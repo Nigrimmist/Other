@@ -1,5 +1,5 @@
-mkdir /root/www
-mkdir /root/www/configs
+mkdir /www
+mkdir /www/configs
 mkdir /www/logs
 mkdir /www/scripts
 mkdir /www/gifs
