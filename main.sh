@@ -14,6 +14,7 @@ mkdir /etc/lsyncd
 
 
 sudo apt-get update
+sudo apt-get install make
 sudo apt-get -y install xrdp #rdp
 sudo apt-get -y install htop
 
