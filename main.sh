@@ -1,4 +1,4 @@
-export backup_server_ip="188.226.202.141"
+export backup_server_ip="188.226.216.73"
 export uploadFileUser="fileuploaduser"
 
 mkdir /www
@@ -6,6 +6,8 @@ mkdir /www/configs
 mkdir /www/logs
 mkdir /www/scripts
 mkdir /www/gifs
+mkdir /www/gifs/original
+mkdir /www/gifs/demotivators
 mkdir /www/temp
 mkdir /etc/lsyncd
 
