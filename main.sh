@@ -1,4 +1,4 @@
-export backup_server_ip="188.226.216.73"
+export backup_server_ip="107.170.170.183"
 export uploadFileUser="fileuploaduser"
 
 mkdir /www

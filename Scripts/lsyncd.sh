@@ -1,4 +1,4 @@
-export backup_server_ip="188.226.216.73"
+export backup_server_ip="107.170.170.183"
 
 wget -O /www/configs/lsyncd.conf.lua "https://raw.githubusercontent.com/Nigrimmist/Other/master/Configs/lsyncd.conf.lua"
 
