@@ -45,6 +45,8 @@ cd /www/temp/nginx-1.4.6 && sudo make install
 cp -f /www/configs/nginx.conf /etc/nginx/conf/
 cp -f /www/scripts/ssga.lua /etc/nginx/
 
+sudo nginx -s stop
 cp /www/temp/nginx-1.4.6/objs/nginx /usr/sbin/
 sudo nginx
+
 
