@@ -35,6 +35,6 @@ sudo adduser --no-create-home $uploadFileUser
 chown $uploadFileUser:$uploadFileUser /www/gifs
 chmod 755 /www/gifs
 
-
+#don t forget about zabbix client!
 
 echo "Reboot required"
