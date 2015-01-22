@@ -38,7 +38,7 @@ sudo apt-get -y install libssl-dev
 export LUAJIT_LIB=/usr/local/lib
 export LUAJIT_INC=/usr/local/include/luajit-2.0
 
-cd /www/temp/nginx-1.4.6 && ./configure --prefix=/etc/nginx --add-module=/www/temp/ngx_devel_kit-0.2.19 --add-module=/www/temp/lua-nginx-module-0.9.5
+cd /www/temp/nginx-1.4.6 && ./configure --prefix=/etc/nginx --with-http_stub_status_module --add-module=/www/temp/ngx_devel_kit-0.2.19 --add-module=/www/temp/lua-nginx-module-0.9.5
 cd /www/temp/nginx-1.4.6 && sudo make
 cd /www/temp/nginx-1.4.6 && sudo make install
 
